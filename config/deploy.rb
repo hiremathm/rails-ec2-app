@@ -1,8 +1,8 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.12.0"
 
-set :application, "my_app_name"
-set :repo_url, "git@example.com:me/my_repo.git"
+# set :application, "my_app_name"
+# set :repo_url, "git@example.com:me/my_repo.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
@@ -39,7 +39,7 @@ set :repo_url, "git@example.com:me/my_repo.git"
 # set :ssh_options, verify_host_key: :secure
 
 set :application, 'rails-ec2-app'# Edit this to match your app name
-set :repo_url, 'https://github.com/shiva-9731/rails-ec2-app.git' # Edit this to match your repository
+set :repo_url, 'git@github.com:shiva-9731/rails-ec2-app.git' # Edit this to match your repository
 set :branch, :master
 set :deploy_to, '/home/deploy/rails-ec2-app'# Edit this to match your app-name
 set :pty, true
