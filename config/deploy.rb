@@ -52,7 +52,7 @@ set :rvm_ruby_version, 'ruby-2.4.1' # Edit this if you are using MRI Ruby
 set :puma_rackup, -> { File.join(current_path, 'config.ru') }
 set :puma_state, "/home/deploy/rails-ec2-app/shared/tmp/pids/puma.state"
 set :puma_pid, "/home/deploy/rails-ec2-app/shared/tmp/pids/puma.pid"
-set :puma_bind, "unix:///home/deploy/rails-ec2-app/shared/tmp/sockets/puma.sock"
+set :puma_bind, "unix://home/deploy/rails-ec2-app/shared/tmp/sockets/puma.sock"
 set :puma_conf, "/home/deploy/rails-ec2-app/shared/puma.rb"
 set :puma_access_log, "/home/deploy/rails-ec2-app/shared/log/puma_error.log"
 set :puma_error_log, "/home/deploy/rails-ec2-app/shared/log/puma_access.log"
